@@ -1,8 +1,6 @@
 from pokemon import pokemon
 
-pokemon1 = pokemon("Pikachu", 20, 20)
+pokemon1 = pokemon("Pikachu", 10, 10, [3, 1])
+pokemon_opponent = pokemon("Eve", 10, 10, [2, 1])
 
-print(pokemon1)
-pokemon1.render_health_bar()
-pokemon1.current_health = 2
-pokemon1.render_health_bar()
+pokemon1.battle(pokemon_opponent)
