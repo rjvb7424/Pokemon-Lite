@@ -15,9 +15,17 @@ class pokemon():
         
         moves = {}
         move_pool = {
-            1: {"name": "Bite", "damage": 15},
-            2: {"name": "Punch", "damage": 10},
-            3: {"name": "Kick", "damage": 5}}
+            1: {"name": "Scratch", "damage": 8},
+            2: {"name": "Bite", "damage": 10},
+            3: {"name": "Head Butt", "damage": 5},
+            4: {"name": "Kick", "damage": 6},
+            5: {"name": "Flame Jet", "damage": 12},
+            6: {"name": "Bullet Seed", "damage": 12},
+            7: {"name": "Water Gun", "damage": 12},
+            8: {"name": "Slap", "damage": 4},
+            9: {"name": "Tackle", "damage": 7},
+            10: {"name": "Chop", "damage": 5},
+            }
 
         added_moves_counter = 0
         for i in move_pool:
@@ -45,7 +53,7 @@ class pokemon():
             health_bar += "-"
             lost_health_bars -= 1
         return health_bar
-    
+
     def render_identifier(self):
 
         # function to identify the pokemon, this whill include its name, and experience
