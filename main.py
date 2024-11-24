@@ -1,12 +1,9 @@
 from charmander import charmander
-from bulbasour import bulbasour
 from squirtle import squirtle
+from battle import battle
 
-pokemon1 = squirtle()
+charmander1 = charmander()
+squirtle1 = squirtle()
+battle1 = battle(charmander1, squirtle1)
 
-pokemon1.identifiers()
-pokemon1.graphics()
-pokemon1.current_xp = 1000
-pokemon1.level_check()
-pokemon1.identifiers()
-pokemon1.graphics()
+battle1.battle_logic()

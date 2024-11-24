@@ -1,8 +1,8 @@
 from pokemon import pokemon
 
 class charmander(pokemon):
-    def __init__(self, name = "charmander", 
-                art = "\033[31m^_^ \n/_\\\n// \\",
+    def __init__(self, name = "Charmander", 
+                art = "\033[31m^_^ \n/_\\\n// \\\033[0m",
                 max_hp = 20, current_hp = 20, 
                 level = 5, 
                 max_xp = 20, current_xp = 0) -> None:

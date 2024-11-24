@@ -1,8 +1,12 @@
+from move_pool import move_pool
+
 class pokemon:
     def __init__(self, name: str, art: str, 
                 max_hp: int, current_hp: int, 
                 level: int, 
-                max_xp: int, current_xp: int) -> None:
+                max_xp: int, current_xp: int,
+                attack: int, defence: int, speed: int,
+                moves) -> None:
         self.name = name
         self.art = art
         self.max_hp = max_hp
@@ -10,6 +14,10 @@ class pokemon:
         self.level = level
         self.max_xp = max_xp
         self.current_xp = current_xp
+        self.attack = attack
+        self.defence = defence
+        self.speed = speed
+        self.moves = moves
 
     def calculate_bars(self, bar_max, current_value):
         bar = ""
