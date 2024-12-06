@@ -1,16 +1,29 @@
-from moves import moves, move
+from pokemon import pokemon
 
-tackle = move("Tackle", 40, 100, "Normal")
-scratch = move("Scratch", 40, 100, "Normal")
-ember = move("Ember", 45, 100, "Fire")
-vine_whip = move("Vine Whip", 45, 100, "Water")
-water_gun = move("Water Gun", 45, 100, "Grass")
-tail_whip = move("Tail Whip", 40, 100, "Normal")
+class move:
+    def __init__(self, name: str, power: int, accuracy: int, type_: str, max_pp: int = 10):
+        self.name = name
+        self.power = power
+        self.accuracy = accuracy
+        self.type_ = type_
+        self.max_pp = max_pp
+        self.pp = max_pp
 
-move_pool = moves()
-move_pool.append(tackle)
-move_pool.append(scratch)
-move_pool.append(ember)
-move_pool.append(vine_whip)
-move_pool.append(water_gun)
-move_pool.append(tail_whip)
+    def __repr__(self):
+        return f"Move({self.name}, Power: {self.power}, Accuracy: {self.accuracy}, Type: {self.type_}, PP: {self.pp}/{self.max_pp})"
+
+class moves:
+    def __init__(self):
+        self.move_list = []
+
+    def append(self, move):
+        self.move_list.append(move)
+
+    def __getitem__(self, index):
+        return self.move_list[index]
+
+    def __len__(self):
+        return len(self.move_list)
+
+    def __repr__(self):
+        return f"Moves: {[move.name for move in self.move_list]}"
