@@ -1,12 +1,12 @@
-class pokemon:
+class Pokemon:
     def __init__(self, index, 
                 health_points, attack, defense, special_attack, special_defense, speed):
         
         # Cries, front and back sprites have been stored in a way in which the name of the file corespondes to the index of that pokemon. 
         self.index = index
         self.cry = f"cries/{index}.ogg"
-        self.front_sprite = f"sprites/front/{index}.gif"
-        self.back_sprite = f"sprites/back/{index}.gif"
+        self.front_sprite = f"pokemon sprites/front/{index}.gif"
+        self.back_sprite = f"pokemon sprites/back/{index}.gif"
 
         # The statistics of the pokemon will be stored in a dictionary.
         self.statistics = {
