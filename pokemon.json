@@ -1,0 +1,136 @@
+{
+    "name": "bulbasaur",
+    "base statistics": {
+        "health points": 45,
+        "attack": 49,
+        "defense": 49,
+        "special attack": 65,
+        "special defense": 65,
+        "speed": 45
+    },
+    "base_experience": 64,
+    "types": [
+        "grass",
+        "poison"
+    ]
+}{
+    "name": "ivysaur",
+    "base statistics": {
+        "health points": 60,
+        "attack": 62,
+        "defense": 63,
+        "special attack": 80,
+        "special defense": 80,
+        "speed": 60
+    },
+    "base_experience": 142,
+    "types": [
+        "grass",
+        "poison"
+    ]
+}{
+    "name": "venusaur",
+    "base statistics": {
+        "health points": 80,
+        "attack": 82,
+        "defense": 83,
+        "special attack": 100,
+        "special defense": 100,
+        "speed": 80
+    },
+    "base_experience": 263,
+    "types": [
+        "grass",
+        "poison"
+    ]
+}{
+    "name": "charmander",
+    "base statistics": {
+        "health points": 39,
+        "attack": 52,
+        "defense": 43,
+        "special attack": 60,
+        "special defense": 50,
+        "speed": 65
+    },
+    "base_experience": 62,
+    "types": [
+        "fire",
+        null
+    ]
+}{
+    "name": "charmeleon",
+    "base statistics": {
+        "health points": 58,
+        "attack": 64,
+        "defense": 58,
+        "special attack": 80,
+        "special defense": 65,
+        "speed": 80
+    },
+    "base_experience": 142,
+    "types": [
+        "fire",
+        null
+    ]
+}{
+    "name": "charizard",
+    "base statistics": {
+        "health points": 78,
+        "attack": 84,
+        "defense": 78,
+        "special attack": 109,
+        "special defense": 85,
+        "speed": 100
+    },
+    "base_experience": 267,
+    "types": [
+        "fire",
+        "flying"
+    ]
+}{
+    "name": "squirtle",
+    "base statistics": {
+        "health points": 44,
+        "attack": 48,
+        "defense": 65,
+        "special attack": 50,
+        "special defense": 64,
+        "speed": 43
+    },
+    "base_experience": 63,
+    "types": [
+        "water",
+        null
+    ]
+}{
+    "name": "wartortle",
+    "base statistics": {
+        "health points": 59,
+        "attack": 63,
+        "defense": 80,
+        "special attack": 65,
+        "special defense": 80,
+        "speed": 58
+    },
+    "base_experience": 142,
+    "types": [
+        "water",
+        null
+    ]
+}{
+    "name": "blastoise",
+    "base statistics": {
+        "health points": 79,
+        "attack": 83,
+        "defense": 100,
+        "special attack": 85,
+        "special defense": 105,
+        "speed": 78
+    },
+    "base_experience": 265,
+    "types": [
+        "water",
+        null
+    ]
+}

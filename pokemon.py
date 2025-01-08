@@ -1,15 +1,15 @@
 import random
 
 class Pokemon:
-    def __init__(self, index, 
+    def __init__(self, id, 
                 base_health_points, base_attack, base_defense, base_special_attack, base_special_defense, base_speed,
                 name, level=5):
 
         # Cries, front and back sprites have been stored in a way in which the name of the file corespondes to the index of that pokemon. 
-        self.index = index
-        self.cry = f"cries/{index}.ogg"
-        self.front_sprite = f"pokemon sprites/front/{index}.gif"
-        self.back_sprite = f"pokemon sprites/back/{index}.gif"
+        self.id = id
+        self.cry = f"cries/{id}.ogg"
+        self.front_sprite = f"pokemon sprites/front/{id}.gif"
+        self.back_sprite = f"pokemon sprites/back/{id}.gif"
 
         # The nickname of the pokemon will equal to the name, then a setter will be used to change the nickname.
         self.name = name
