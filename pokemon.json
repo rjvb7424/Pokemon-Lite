@@ -1,136 +1,313 @@
-{
-    "name": "bulbasaur",
-    "base statistics": {
-        "health points": 45,
-        "attack": 49,
-        "defense": 49,
-        "special attack": 65,
-        "special defense": 65,
-        "speed": 45
+[
+    {
+        "name": "bulbasaur",
+        "base_statistics": {
+            "health_points": 45,
+            "attack": 49,
+            "defense": 49,
+            "special_attack": 65,
+            "special_defense": 65,
+            "speed": 45
+        },
+        "base_experience": 64,
+        "types": [
+            "grass",
+            "poison"
+        ]
     },
-    "base_experience": 64,
-    "types": [
-        "grass",
-        "poison"
-    ]
-}{
-    "name": "ivysaur",
-    "base statistics": {
-        "health points": 60,
-        "attack": 62,
-        "defense": 63,
-        "special attack": 80,
-        "special defense": 80,
-        "speed": 60
+    {
+        "name": "ivysaur",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 62,
+            "defense": 63,
+            "special_attack": 80,
+            "special_defense": 80,
+            "speed": 60
+        },
+        "base_experience": 142,
+        "types": [
+            "grass",
+            "poison"
+        ]
     },
-    "base_experience": 142,
-    "types": [
-        "grass",
-        "poison"
-    ]
-}{
-    "name": "venusaur",
-    "base statistics": {
-        "health points": 80,
-        "attack": 82,
-        "defense": 83,
-        "special attack": 100,
-        "special defense": 100,
-        "speed": 80
+    {
+        "name": "venusaur",
+        "base_statistics": {
+            "health_points": 80,
+            "attack": 82,
+            "defense": 83,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 80
+        },
+        "base_experience": 263,
+        "types": [
+            "grass",
+            "poison"
+        ]
     },
-    "base_experience": 263,
-    "types": [
-        "grass",
-        "poison"
-    ]
-}{
-    "name": "charmander",
-    "base statistics": {
-        "health points": 39,
-        "attack": 52,
-        "defense": 43,
-        "special attack": 60,
-        "special defense": 50,
-        "speed": 65
+    {
+        "name": "charmander",
+        "base_statistics": {
+            "health_points": 39,
+            "attack": 52,
+            "defense": 43,
+            "special_attack": 60,
+            "special_defense": 50,
+            "speed": 65
+        },
+        "base_experience": 62,
+        "types": [
+            "fire"
+        ]
     },
-    "base_experience": 62,
-    "types": [
-        "fire",
-        null
-    ]
-}{
-    "name": "charmeleon",
-    "base statistics": {
-        "health points": 58,
-        "attack": 64,
-        "defense": 58,
-        "special attack": 80,
-        "special defense": 65,
-        "speed": 80
+    {
+        "name": "charmeleon",
+        "base_statistics": {
+            "health_points": 58,
+            "attack": 64,
+            "defense": 58,
+            "special_attack": 80,
+            "special_defense": 65,
+            "speed": 80
+        },
+        "base_experience": 142,
+        "types": [
+            "fire"
+        ]
     },
-    "base_experience": 142,
-    "types": [
-        "fire",
-        null
-    ]
-}{
-    "name": "charizard",
-    "base statistics": {
-        "health points": 78,
-        "attack": 84,
-        "defense": 78,
-        "special attack": 109,
-        "special defense": 85,
-        "speed": 100
+    {
+        "name": "charizard",
+        "base_statistics": {
+            "health_points": 78,
+            "attack": 84,
+            "defense": 78,
+            "special_attack": 109,
+            "special_defense": 85,
+            "speed": 100
+        },
+        "base_experience": 267,
+        "types": [
+            "fire",
+            "flying"
+        ]
     },
-    "base_experience": 267,
-    "types": [
-        "fire",
-        "flying"
-    ]
-}{
-    "name": "squirtle",
-    "base statistics": {
-        "health points": 44,
-        "attack": 48,
-        "defense": 65,
-        "special attack": 50,
-        "special defense": 64,
-        "speed": 43
+    {
+        "name": "squirtle",
+        "base_statistics": {
+            "health_points": 44,
+            "attack": 48,
+            "defense": 65,
+            "special_attack": 50,
+            "special_defense": 64,
+            "speed": 43
+        },
+        "base_experience": 63,
+        "types": [
+            "water"
+        ]
     },
-    "base_experience": 63,
-    "types": [
-        "water",
-        null
-    ]
-}{
-    "name": "wartortle",
-    "base statistics": {
-        "health points": 59,
-        "attack": 63,
-        "defense": 80,
-        "special attack": 65,
-        "special defense": 80,
-        "speed": 58
+    {
+        "name": "wartortle",
+        "base_statistics": {
+            "health_points": 59,
+            "attack": 63,
+            "defense": 80,
+            "special_attack": 65,
+            "special_defense": 80,
+            "speed": 58
+        },
+        "base_experience": 142,
+        "types": [
+            "water"
+        ]
     },
-    "base_experience": 142,
-    "types": [
-        "water",
-        null
-    ]
-}{
-    "name": "blastoise",
-    "base statistics": {
-        "health points": 79,
-        "attack": 83,
-        "defense": 100,
-        "special attack": 85,
-        "special defense": 105,
-        "speed": 78
+    {
+        "name": "blastoise",
+        "base_statistics": {
+            "health_points": 79,
+            "attack": 83,
+            "defense": 100,
+            "special_attack": 85,
+            "special_defense": 105,
+            "speed": 78
+        },
+        "base_experience": 265,
+        "types": [
+            "water"
+        ]
     },
-    "base_experience": 265,
-    "types": [
-        "water",
-        null
-    ]
-}
+    {
+        "name": "caterpie",
+        "base_statistics": {
+            "health_points": 45,
+            "attack": 30,
+            "defense": 35,
+            "special_attack": 20,
+            "special_defense": 20,
+            "speed": 45
+        },
+        "base_experience": 39,
+        "types": [
+            "bug"
+        ]
+    },
+    {
+        "name": "metapod",
+        "base_statistics": {
+            "health_points": 50,
+            "attack": 20,
+            "defense": 55,
+            "special_attack": 25,
+            "special_defense": 25,
+            "speed": 30
+        },
+        "base_experience": 72,
+        "types": [
+            "bug"
+        ]
+    },
+    {
+        "name": "butterfree",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 45,
+            "defense": 50,
+            "special_attack": 90,
+            "special_defense": 80,
+            "speed": 70
+        },
+        "base_experience": 198,
+        "types": [
+            "bug",
+            "flying"
+        ]
+    },
+    {
+        "name": "weedle",
+        "base_statistics": {
+            "health_points": 40,
+            "attack": 35,
+            "defense": 30,
+            "special_attack": 20,
+            "special_defense": 20,
+            "speed": 50
+        },
+        "base_experience": 39,
+        "types": [
+            "bug",
+            "poison"
+        ]
+    },
+    {
+        "name": "kakuna",
+        "base_statistics": {
+            "health_points": 45,
+            "attack": 25,
+            "defense": 50,
+            "special_attack": 25,
+            "special_defense": 25,
+            "speed": 35
+        },
+        "base_experience": 72,
+        "types": [
+            "bug",
+            "poison"
+        ]
+    },
+    {
+        "name": "beedrill",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 90,
+            "defense": 40,
+            "special_attack": 45,
+            "special_defense": 80,
+            "speed": 75
+        },
+        "base_experience": 178,
+        "types": [
+            "bug",
+            "poison"
+        ]
+    },
+    {
+        "name": "pidgey",
+        "base_statistics": {
+            "health_points": 40,
+            "attack": 45,
+            "defense": 40,
+            "special_attack": 35,
+            "special_defense": 35,
+            "speed": 56
+        },
+        "base_experience": 50,
+        "types": [
+            "normal",
+            "flying"
+        ]
+    },
+    {
+        "name": "pidgeotto",
+        "base_statistics": {
+            "health_points": 63,
+            "attack": 60,
+            "defense": 55,
+            "special_attack": 50,
+            "special_defense": 50,
+            "speed": 71
+        },
+        "base_experience": 122,
+        "types": [
+            "normal",
+            "flying"
+        ]
+    },
+    {
+        "name": "pidgeot",
+        "base_statistics": {
+            "health_points": 83,
+            "attack": 80,
+            "defense": 75,
+            "special_attack": 70,
+            "special_defense": 70,
+            "speed": 101
+        },
+        "base_experience": 216,
+        "types": [
+            "normal",
+            "flying"
+        ]
+    },
+    {
+        "name": "rattata",
+        "base_statistics": {
+            "health_points": 30,
+            "attack": 56,
+            "defense": 35,
+            "special_attack": 25,
+            "special_defense": 35,
+            "speed": 72
+        },
+        "base_experience": 51,
+        "types": [
+            "normal"
+        ]
+    },
+    {
+        "name": "raticate",
+        "base_statistics": {
+            "health_points": 55,
+            "attack": 81,
+            "defense": 60,
+            "special_attack": 50,
+            "special_defense": 70,
+            "speed": 97
+        },
+        "base_experience": 145,
+        "types": [
+            "normal"
+        ]
+    }
+]
