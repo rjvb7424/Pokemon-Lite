@@ -7,6 +7,9 @@ id_max = 20
 # A list to store all Pokémon data.
 # This is done to avoid writing to the file every time a Pokémon is fetched.
 pokemon_list = []
+# A slight miscalculation in the code is that the sprites and cries imported start at index 1. 
+# But without the None, the pokemon JSON would start at index 0, this would cause the sprites and cries to be off by one.
+pokemon_list.insert(0, None)
 
 # For loop will run from 1, as the first Pokémon has an ID of 1.
 # 1 is being added because the range function is up to but not including the second argument.
@@ -48,7 +51,7 @@ for id in range(1, id_max + 1):
 
     # Append the Pokémon data to the list.
     pokemon_list.append(pokemon)
-    print(f"Pokemon {name} added. {id//id_max*100}% completed.")
+    print(f"Pokemon {name} added. {int(id/id_max*100)}% completed.")
     time.sleep(1)
 
 # Write all Pokémon data to the JSON file in one go. 

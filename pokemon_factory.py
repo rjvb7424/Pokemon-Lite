@@ -1,28 +1,23 @@
 from pokemon import Pokemon
-import
+import json
+
+with open("pokemon.json", "r") as file:
+    pokemon_data = json.load(file)
+
+
 
 class PokemonFactory:
     def __init__(self, id):
         self.id = id
-        api_url = "https://pokeapi.co/api/v2/pokemon"
-        response = requests.get(f"{url}/{index}").json()
 
-    health_points = response["stats"][0]["base_stat"]
-    attack = response["stats"][1]["base_stat"]
-    defense = response["stats"][2]["base_stat"]
-    special_attack = response["stats"][3]["base_stat"]
-    special_defense = response["stats"][4]["base_stat"]
-    speed = response["stats"][5]["base_stat"]
-    name = response["name"]
 
-    # Instantiate your Pokemon object
-    pokemon = Pokemon(index,
-                      health_points, 
-                      attack, 
-                      defense, 
-                      special_attack, 
-                      special_defense, 
-                      speed, 
-                      name, 
-                      level=50)
-    pokemon = Pokemon()
+    pokemon = Pokemon(
+        id=pokemon_data[id]["id"],
+        base_health_points=pokemon_data[id]["base_statistics"]["health_points"],
+        base_attack=pokemon_data[id]["base_statistics"]["attack"],
+        base_defense=pokemon_data[id]["base_statistics"]["defense"],
+        base_special_attack=pokemon_data[id]["base_statistics"]["special_attack"],
+        base_special_defense=pokemon_data[id]["base_statistics"]["special_defense"],
+        base_speed=pokemon_data[id]["base_statistics"]["speed"],
+        name=pokemon_data[id]["name"],
+    )
