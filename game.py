@@ -1,81 +1,77 @@
-from pokemon import Pokemon
-from PIL import Image, ImageSequence
+import tkinter as tk
+from PIL import Image, ImageTk
 import pygame
-import sys
+import time
 
-# Initialize Pygame
-pygame.init()
+def display_sprite_and_play_sound(pokemon):
+    # Initialize pygame mixer for playing the sound
+    pygame.mixer.init()
 
-# Initialize the mixer for sound
-pygame.mixer.init()
+    root = tk.Tk()
+    root.title(f"{pokemon.name} Display")
 
-# Load the sound file
-  # Replace with your file path
+    # --- Load GIF frames using Pillow ---
+    # This part reads every frame in the GIF and converts each frame into a PhotoImage.
+    pil_image = Image.open(pokemon.front_sprite)
+    frames = []
+    
+    try:
+        while True:
+            frame = ImageTk.PhotoImage(pil_image.copy())
+            frames.append(frame)
+            pil_image.seek(len(frames))  # Go to the next frame
+    except EOFError:
+        pass  # We have reached the end of the GIF
 
-# Play the sound
+    # Create a Label to display the frames
+    label = tk.Label(root)
+    label.pack()
+
+    # --- Define a function to loop through the GIF frames ---
+    def update_frame(frame_index=0):
+        frame = frames[frame_index]
+        label.configure(image=frame)
+        # Schedule next frame update
+        root.after(100, update_frame, (frame_index + 1) % len(frames))
+
+    # Begin animating the GIF
+    update_frame()
+
+    # --- Play the sound ---
+    cry_sound = pygame.mixer.Sound(pokemon.cry)
+    cry_sound.play()
+
+    # Start the Tkinter main event loop
+    root.mainloop()
 
 
-# Set up the display
-screen_width, screen_height = 800, 600
-screen = pygame.display.set_mode((screen_width, screen_height))
-pygame.display.set_caption("Animated Sprite with Sound")
+# Example usage:
+if __name__ == "__main__":
+    import requests
+    from pokemon import Pokemon
+    
+    index = 3
+    url = "https://pokeapi.co/api/v2/pokemon"
+    response = requests.get(f"{url}/{index}").json()
 
-# Set up the clock for controlling the frame rate
-clock = pygame.time.Clock()
+    health_points = response["stats"][0]["base_stat"]
+    attack = response["stats"][1]["base_stat"]
+    defense = response["stats"][2]["base_stat"]
+    special_attack = response["stats"][3]["base_stat"]
+    special_defense = response["stats"][4]["base_stat"]
+    speed = response["stats"][5]["base_stat"]
+    name = response["name"]
 
-# Load the animated GIF using Pillow
-index = 29
-pokemon_instance = Pokemon(index=index, health_points= 3, attack= 3, defense= 9, special_attack= 3, special_defense= 3, speed= 3)  # Create an instance of the Pokemon class
-gif_path = pokemon_instance.front_sprite  # Ensure the attribute is correctly referenced
-gif_image = Image.open(gif_path)
+    # Instantiate your Pokemon object
+    pokemon = Pokemon(index,
+                      health_points, 
+                      attack, 
+                      defense, 
+                      special_attack, 
+                      special_defense, 
+                      speed, 
+                      name, 
+                      level=50)
 
-sound_effect = pygame.mixer.Sound(f"cries/{index}.ogg")
-sound_effect.play()
-
-# Extract frames from the GIF
-frames = []
-for frame in ImageSequence.Iterator(gif_image):
-    frame = frame.convert("RGBA")  # Ensure compatibility with Pygame
-    pygame_image = pygame.image.fromstring(frame.tobytes(), frame.size, frame.mode)
-
-    # Scale up the frame (e.g., 4x bigger)
-    scaled_frame = pygame.transform.scale(
-        pygame_image, (frame.width * 4, frame.height * 4)  # Adjust scale factor
-    )
-    frames.append(scaled_frame)
-
-# Get the rectangle for positioning
-sprite_rect = frames[0].get_rect()
-sprite_rect.center = (screen_width // 2, screen_height // 2)  # Center the sprite
-
-# Game loop
-running = True
-frame_index = 0  # Track the current frame
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-
-        # Example: Play sound on key press
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_SPACE:  # Play sound when Space is pressed
-                sound_effect.play()
-
-    # Clear the screen with a background color
-    screen.fill((30, 30, 30))  # Dark gray background
-
-    # Draw the current frame of the GIF
-    screen.blit(frames[frame_index], sprite_rect)
-
-    # Update the frame index to create animation
-    frame_index = (frame_index + 1) % len(frames)
-
-    # Update the display
-    pygame.display.flip()
-
-    # Cap the frame rate to control GIF speed (adjust as needed)
-    clock.tick(10)  # Adjust the frame rate for animation speed
-
-# Quit Pygame
-pygame.quit()
-sys.exit()
+    # Display sprite and play sound
+    display_sprite_and_play_sound(pokemon)

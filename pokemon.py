@@ -2,13 +2,19 @@ import random
 
 class Pokemon:
     def __init__(self, index, 
-                base_health_points, base_attack, base_defense, base_special_attack, base_special_defense, base_speed):
+                base_health_points, base_attack, base_defense, base_special_attack, base_special_defense, base_speed,
+                name, level=5):
 
         # Cries, front and back sprites have been stored in a way in which the name of the file corespondes to the index of that pokemon. 
         self.index = index
         self.cry = f"cries/{index}.ogg"
         self.front_sprite = f"pokemon sprites/front/{index}.gif"
         self.back_sprite = f"pokemon sprites/back/{index}.gif"
+
+        # The nickname of the pokemon will equal to the name, then a setter will be used to change the nickname.
+        self.name = name
+        self.nickname = name
+        self. level = level
 
         # The base statistics of the pokemon will be stored in a dictionary.
         self.base_statistics = {
@@ -30,7 +36,7 @@ class Pokemon:
             "special attack": random.randrange(0, 32),
             "special defense": random.randrange(0, 32),
             "speed": random.randrange(0, 32),
-        }
+            }
 
         # Effort Values (EV) are gained through battling other Pokemon. 
         # In a range of 0 to 252 per statistic. 
@@ -42,21 +48,47 @@ class Pokemon:
             "special attack": 0,
             "special defense": 0,
             "speed": 0,
-        }
+            }
 
         # The statistics of the pokemon will be stored in a dictionary. 
-        # The statistics are calculated using the formula
-        # dwdad in the calculate_hp_stat
+        # The statistics are calculated using the formula provided by Bulbapedia.
         self.statistics = {
-            "health points": self.calculate_hp_stat(self.base_statistics["health points"], 
-                                                    self.individual_values["health points"], 
-                                                    self.effort_values["health points"], 
-                                                    self.level),
+            "health points": self.calculate_health_points_statistic(
+                self.base_statistics["health points"], 
+                self.individual_values["health points"], 
+                self.effort_values["health points"], 
+                self.level,),
+            "attack": self.calculate_other_statistics(self.base_statistics["attack"],
+                self.individual_values["attack"],
+                self.effort_values["attack"],
+                self.level,),
+            "defense": self.calculate_other_statistics(
+                self.base_statistics["defense"],
+                self.individual_values["defense"],
+                self.effort_values["defense"],
+                self.level,),
+            "special attack": self.calculate_other_statistics(
+                self.base_statistics["special attack"],
+                self.individual_values["special attack"],
+                self.effort_values["special attack"],
+                self.level,),
+            "special defense": self.calculate_other_statistics(
+                self.base_statistics["special defense"],
+                self.individual_values["special defense"],
+                self.effort_values["special defense"],
+                self.level,),
+            "speed": self.calculate_other_statistics(
+                self.base_statistics["speed"],
+                self.individual_values["speed"],
+                self.effort_values["speed"],
+                self.level,)
         }
 
-    def calculate_health_points_statistic(base_statistic, individual_values, effort_values, level):
-        return int((((base_statistic * 2) + individual_values + (effort_values / 4)) * (level / 100)) + level + 10)
+    def calculate_health_points_statistic(self, base_statistic, individual_values, effort_values, level):
+        statistic = int(((2 * base_statistic + individual_values + (effort_values / 4)) * level) / 100 + level + 10)
+        return int(statistic)
     
-    def calculate_other_statistics(base_statistic, individual_values, effort_values, level, nature_multiplier=1.0):
-        stat = int((((base_stat * 2) + iv + (ev / 4)) * (level / 100)) + 5)
-        return int(stat * nature_multiplier)
+    # TO DO - Implement natures 
+    def calculate_other_statistics(self, base_statistic, individual_values, effort_values, level, nature_multiplier=1.0):
+        statistic = int((((2 * base_statistic + individual_values + (effort_values / 4)) * level) / 100 + 5) * nature_multiplier)
+        return int(statistic)
