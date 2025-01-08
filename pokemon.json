@@ -310,5 +310,2026 @@
         "types": [
             "normal"
         ]
+    },
+    {
+        "name": "spearow",
+        "base_statistics": {
+            "health_points": 40,
+            "attack": 60,
+            "defense": 30,
+            "special_attack": 31,
+            "special_defense": 31,
+            "speed": 70
+        },
+        "base_experience": 52,
+        "types": [
+            "normal",
+            "flying"
+        ]
+    },
+    {
+        "name": "fearow",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 90,
+            "defense": 65,
+            "special_attack": 61,
+            "special_defense": 61,
+            "speed": 100
+        },
+        "base_experience": 155,
+        "types": [
+            "normal",
+            "flying"
+        ]
+    },
+    {
+        "name": "ekans",
+        "base_statistics": {
+            "health_points": 35,
+            "attack": 60,
+            "defense": 44,
+            "special_attack": 40,
+            "special_defense": 54,
+            "speed": 55
+        },
+        "base_experience": 58,
+        "types": [
+            "poison"
+        ]
+    },
+    {
+        "name": "arbok",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 95,
+            "defense": 69,
+            "special_attack": 65,
+            "special_defense": 79,
+            "speed": 80
+        },
+        "base_experience": 157,
+        "types": [
+            "poison"
+        ]
+    },
+    {
+        "name": "pikachu",
+        "base_statistics": {
+            "health_points": 35,
+            "attack": 55,
+            "defense": 40,
+            "special_attack": 50,
+            "special_defense": 50,
+            "speed": 90
+        },
+        "base_experience": 112,
+        "types": [
+            "electric"
+        ]
+    },
+    {
+        "name": "raichu",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 90,
+            "defense": 55,
+            "special_attack": 90,
+            "special_defense": 80,
+            "speed": 110
+        },
+        "base_experience": 243,
+        "types": [
+            "electric"
+        ]
+    },
+    {
+        "name": "sandshrew",
+        "base_statistics": {
+            "health_points": 50,
+            "attack": 75,
+            "defense": 85,
+            "special_attack": 20,
+            "special_defense": 30,
+            "speed": 40
+        },
+        "base_experience": 60,
+        "types": [
+            "ground"
+        ]
+    },
+    {
+        "name": "sandslash",
+        "base_statistics": {
+            "health_points": 75,
+            "attack": 100,
+            "defense": 110,
+            "special_attack": 45,
+            "special_defense": 55,
+            "speed": 65
+        },
+        "base_experience": 158,
+        "types": [
+            "ground"
+        ]
+    },
+    {
+        "name": "nidoran-f",
+        "base_statistics": {
+            "health_points": 55,
+            "attack": 47,
+            "defense": 52,
+            "special_attack": 40,
+            "special_defense": 40,
+            "speed": 41
+        },
+        "base_experience": 55,
+        "types": [
+            "poison"
+        ]
+    },
+    {
+        "name": "nidorina",
+        "base_statistics": {
+            "health_points": 70,
+            "attack": 62,
+            "defense": 67,
+            "special_attack": 55,
+            "special_defense": 55,
+            "speed": 56
+        },
+        "base_experience": 128,
+        "types": [
+            "poison"
+        ]
+    },
+    {
+        "name": "nidoqueen",
+        "base_statistics": {
+            "health_points": 90,
+            "attack": 92,
+            "defense": 87,
+            "special_attack": 75,
+            "special_defense": 85,
+            "speed": 76
+        },
+        "base_experience": 253,
+        "types": [
+            "poison",
+            "ground"
+        ]
+    },
+    {
+        "name": "nidoran-m",
+        "base_statistics": {
+            "health_points": 46,
+            "attack": 57,
+            "defense": 40,
+            "special_attack": 40,
+            "special_defense": 40,
+            "speed": 50
+        },
+        "base_experience": 55,
+        "types": [
+            "poison"
+        ]
+    },
+    {
+        "name": "nidorino",
+        "base_statistics": {
+            "health_points": 61,
+            "attack": 72,
+            "defense": 57,
+            "special_attack": 55,
+            "special_defense": 55,
+            "speed": 65
+        },
+        "base_experience": 128,
+        "types": [
+            "poison"
+        ]
+    },
+    {
+        "name": "nidoking",
+        "base_statistics": {
+            "health_points": 81,
+            "attack": 102,
+            "defense": 77,
+            "special_attack": 85,
+            "special_defense": 75,
+            "speed": 85
+        },
+        "base_experience": 253,
+        "types": [
+            "poison",
+            "ground"
+        ]
+    },
+    {
+        "name": "clefairy",
+        "base_statistics": {
+            "health_points": 70,
+            "attack": 45,
+            "defense": 48,
+            "special_attack": 60,
+            "special_defense": 65,
+            "speed": 35
+        },
+        "base_experience": 113,
+        "types": [
+            "fairy"
+        ]
+    },
+    {
+        "name": "clefable",
+        "base_statistics": {
+            "health_points": 95,
+            "attack": 70,
+            "defense": 73,
+            "special_attack": 95,
+            "special_defense": 90,
+            "speed": 60
+        },
+        "base_experience": 242,
+        "types": [
+            "fairy"
+        ]
+    },
+    {
+        "name": "vulpix",
+        "base_statistics": {
+            "health_points": 38,
+            "attack": 41,
+            "defense": 40,
+            "special_attack": 50,
+            "special_defense": 65,
+            "speed": 65
+        },
+        "base_experience": 60,
+        "types": [
+            "fire"
+        ]
+    },
+    {
+        "name": "ninetales",
+        "base_statistics": {
+            "health_points": 73,
+            "attack": 76,
+            "defense": 75,
+            "special_attack": 81,
+            "special_defense": 100,
+            "speed": 100
+        },
+        "base_experience": 177,
+        "types": [
+            "fire"
+        ]
+    },
+    {
+        "name": "jigglypuff",
+        "base_statistics": {
+            "health_points": 115,
+            "attack": 45,
+            "defense": 20,
+            "special_attack": 45,
+            "special_defense": 25,
+            "speed": 20
+        },
+        "base_experience": 95,
+        "types": [
+            "normal",
+            "fairy"
+        ]
+    },
+    {
+        "name": "wigglytuff",
+        "base_statistics": {
+            "health_points": 140,
+            "attack": 70,
+            "defense": 45,
+            "special_attack": 85,
+            "special_defense": 50,
+            "speed": 45
+        },
+        "base_experience": 218,
+        "types": [
+            "normal",
+            "fairy"
+        ]
+    },
+    {
+        "name": "zubat",
+        "base_statistics": {
+            "health_points": 40,
+            "attack": 45,
+            "defense": 35,
+            "special_attack": 30,
+            "special_defense": 40,
+            "speed": 55
+        },
+        "base_experience": 49,
+        "types": [
+            "poison",
+            "flying"
+        ]
+    },
+    {
+        "name": "golbat",
+        "base_statistics": {
+            "health_points": 75,
+            "attack": 80,
+            "defense": 70,
+            "special_attack": 65,
+            "special_defense": 75,
+            "speed": 90
+        },
+        "base_experience": 159,
+        "types": [
+            "poison",
+            "flying"
+        ]
+    },
+    {
+        "name": "oddish",
+        "base_statistics": {
+            "health_points": 45,
+            "attack": 50,
+            "defense": 55,
+            "special_attack": 75,
+            "special_defense": 65,
+            "speed": 30
+        },
+        "base_experience": 64,
+        "types": [
+            "grass",
+            "poison"
+        ]
+    },
+    {
+        "name": "gloom",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 65,
+            "defense": 70,
+            "special_attack": 85,
+            "special_defense": 75,
+            "speed": 40
+        },
+        "base_experience": 138,
+        "types": [
+            "grass",
+            "poison"
+        ]
+    },
+    {
+        "name": "vileplume",
+        "base_statistics": {
+            "health_points": 75,
+            "attack": 80,
+            "defense": 85,
+            "special_attack": 110,
+            "special_defense": 90,
+            "speed": 50
+        },
+        "base_experience": 245,
+        "types": [
+            "grass",
+            "poison"
+        ]
+    },
+    {
+        "name": "paras",
+        "base_statistics": {
+            "health_points": 35,
+            "attack": 70,
+            "defense": 55,
+            "special_attack": 45,
+            "special_defense": 55,
+            "speed": 25
+        },
+        "base_experience": 57,
+        "types": [
+            "bug",
+            "grass"
+        ]
+    },
+    {
+        "name": "parasect",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 95,
+            "defense": 80,
+            "special_attack": 60,
+            "special_defense": 80,
+            "speed": 30
+        },
+        "base_experience": 142,
+        "types": [
+            "bug",
+            "grass"
+        ]
+    },
+    {
+        "name": "venonat",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 55,
+            "defense": 50,
+            "special_attack": 40,
+            "special_defense": 55,
+            "speed": 45
+        },
+        "base_experience": 61,
+        "types": [
+            "bug",
+            "poison"
+        ]
+    },
+    {
+        "name": "venomoth",
+        "base_statistics": {
+            "health_points": 70,
+            "attack": 65,
+            "defense": 60,
+            "special_attack": 90,
+            "special_defense": 75,
+            "speed": 90
+        },
+        "base_experience": 158,
+        "types": [
+            "bug",
+            "poison"
+        ]
+    },
+    {
+        "name": "diglett",
+        "base_statistics": {
+            "health_points": 10,
+            "attack": 55,
+            "defense": 25,
+            "special_attack": 35,
+            "special_defense": 45,
+            "speed": 95
+        },
+        "base_experience": 53,
+        "types": [
+            "ground"
+        ]
+    },
+    {
+        "name": "dugtrio",
+        "base_statistics": {
+            "health_points": 35,
+            "attack": 100,
+            "defense": 50,
+            "special_attack": 50,
+            "special_defense": 70,
+            "speed": 120
+        },
+        "base_experience": 149,
+        "types": [
+            "ground"
+        ]
+    },
+    {
+        "name": "meowth",
+        "base_statistics": {
+            "health_points": 40,
+            "attack": 45,
+            "defense": 35,
+            "special_attack": 40,
+            "special_defense": 40,
+            "speed": 90
+        },
+        "base_experience": 58,
+        "types": [
+            "normal"
+        ]
+    },
+    {
+        "name": "persian",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 70,
+            "defense": 60,
+            "special_attack": 65,
+            "special_defense": 65,
+            "speed": 115
+        },
+        "base_experience": 154,
+        "types": [
+            "normal"
+        ]
+    },
+    {
+        "name": "psyduck",
+        "base_statistics": {
+            "health_points": 50,
+            "attack": 52,
+            "defense": 48,
+            "special_attack": 65,
+            "special_defense": 50,
+            "speed": 55
+        },
+        "base_experience": 64,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "golduck",
+        "base_statistics": {
+            "health_points": 80,
+            "attack": 82,
+            "defense": 78,
+            "special_attack": 95,
+            "special_defense": 80,
+            "speed": 85
+        },
+        "base_experience": 175,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "mankey",
+        "base_statistics": {
+            "health_points": 40,
+            "attack": 80,
+            "defense": 35,
+            "special_attack": 35,
+            "special_defense": 45,
+            "speed": 70
+        },
+        "base_experience": 61,
+        "types": [
+            "fighting"
+        ]
+    },
+    {
+        "name": "primeape",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 105,
+            "defense": 60,
+            "special_attack": 60,
+            "special_defense": 70,
+            "speed": 95
+        },
+        "base_experience": 159,
+        "types": [
+            "fighting"
+        ]
+    },
+    {
+        "name": "growlithe",
+        "base_statistics": {
+            "health_points": 55,
+            "attack": 70,
+            "defense": 45,
+            "special_attack": 70,
+            "special_defense": 50,
+            "speed": 60
+        },
+        "base_experience": 70,
+        "types": [
+            "fire"
+        ]
+    },
+    {
+        "name": "arcanine",
+        "base_statistics": {
+            "health_points": 90,
+            "attack": 110,
+            "defense": 80,
+            "special_attack": 100,
+            "special_defense": 80,
+            "speed": 95
+        },
+        "base_experience": 194,
+        "types": [
+            "fire"
+        ]
+    },
+    {
+        "name": "poliwag",
+        "base_statistics": {
+            "health_points": 40,
+            "attack": 50,
+            "defense": 40,
+            "special_attack": 40,
+            "special_defense": 40,
+            "speed": 90
+        },
+        "base_experience": 60,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "poliwhirl",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 65,
+            "defense": 65,
+            "special_attack": 50,
+            "special_defense": 50,
+            "speed": 90
+        },
+        "base_experience": 135,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "poliwrath",
+        "base_statistics": {
+            "health_points": 90,
+            "attack": 95,
+            "defense": 95,
+            "special_attack": 70,
+            "special_defense": 90,
+            "speed": 70
+        },
+        "base_experience": 255,
+        "types": [
+            "water",
+            "fighting"
+        ]
+    },
+    {
+        "name": "abra",
+        "base_statistics": {
+            "health_points": 25,
+            "attack": 20,
+            "defense": 15,
+            "special_attack": 105,
+            "special_defense": 55,
+            "speed": 90
+        },
+        "base_experience": 62,
+        "types": [
+            "psychic"
+        ]
+    },
+    {
+        "name": "kadabra",
+        "base_statistics": {
+            "health_points": 40,
+            "attack": 35,
+            "defense": 30,
+            "special_attack": 120,
+            "special_defense": 70,
+            "speed": 105
+        },
+        "base_experience": 140,
+        "types": [
+            "psychic"
+        ]
+    },
+    {
+        "name": "alakazam",
+        "base_statistics": {
+            "health_points": 55,
+            "attack": 50,
+            "defense": 45,
+            "special_attack": 135,
+            "special_defense": 95,
+            "speed": 120
+        },
+        "base_experience": 250,
+        "types": [
+            "psychic"
+        ]
+    },
+    {
+        "name": "machop",
+        "base_statistics": {
+            "health_points": 70,
+            "attack": 80,
+            "defense": 50,
+            "special_attack": 35,
+            "special_defense": 35,
+            "speed": 35
+        },
+        "base_experience": 61,
+        "types": [
+            "fighting"
+        ]
+    },
+    {
+        "name": "machoke",
+        "base_statistics": {
+            "health_points": 80,
+            "attack": 100,
+            "defense": 70,
+            "special_attack": 50,
+            "special_defense": 60,
+            "speed": 45
+        },
+        "base_experience": 142,
+        "types": [
+            "fighting"
+        ]
+    },
+    {
+        "name": "machamp",
+        "base_statistics": {
+            "health_points": 90,
+            "attack": 130,
+            "defense": 80,
+            "special_attack": 65,
+            "special_defense": 85,
+            "speed": 55
+        },
+        "base_experience": 253,
+        "types": [
+            "fighting"
+        ]
+    },
+    {
+        "name": "bellsprout",
+        "base_statistics": {
+            "health_points": 50,
+            "attack": 75,
+            "defense": 35,
+            "special_attack": 70,
+            "special_defense": 30,
+            "speed": 40
+        },
+        "base_experience": 60,
+        "types": [
+            "grass",
+            "poison"
+        ]
+    },
+    {
+        "name": "weepinbell",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 90,
+            "defense": 50,
+            "special_attack": 85,
+            "special_defense": 45,
+            "speed": 55
+        },
+        "base_experience": 137,
+        "types": [
+            "grass",
+            "poison"
+        ]
+    },
+    {
+        "name": "victreebel",
+        "base_statistics": {
+            "health_points": 80,
+            "attack": 105,
+            "defense": 65,
+            "special_attack": 100,
+            "special_defense": 70,
+            "speed": 70
+        },
+        "base_experience": 221,
+        "types": [
+            "grass",
+            "poison"
+        ]
+    },
+    {
+        "name": "tentacool",
+        "base_statistics": {
+            "health_points": 40,
+            "attack": 40,
+            "defense": 35,
+            "special_attack": 50,
+            "special_defense": 100,
+            "speed": 70
+        },
+        "base_experience": 67,
+        "types": [
+            "water",
+            "poison"
+        ]
+    },
+    {
+        "name": "tentacruel",
+        "base_statistics": {
+            "health_points": 80,
+            "attack": 70,
+            "defense": 65,
+            "special_attack": 80,
+            "special_defense": 120,
+            "speed": 100
+        },
+        "base_experience": 180,
+        "types": [
+            "water",
+            "poison"
+        ]
+    },
+    {
+        "name": "geodude",
+        "base_statistics": {
+            "health_points": 40,
+            "attack": 80,
+            "defense": 100,
+            "special_attack": 30,
+            "special_defense": 30,
+            "speed": 20
+        },
+        "base_experience": 60,
+        "types": [
+            "rock",
+            "ground"
+        ]
+    },
+    {
+        "name": "graveler",
+        "base_statistics": {
+            "health_points": 55,
+            "attack": 95,
+            "defense": 115,
+            "special_attack": 45,
+            "special_defense": 45,
+            "speed": 35
+        },
+        "base_experience": 137,
+        "types": [
+            "rock",
+            "ground"
+        ]
+    },
+    {
+        "name": "golem",
+        "base_statistics": {
+            "health_points": 80,
+            "attack": 120,
+            "defense": 130,
+            "special_attack": 55,
+            "special_defense": 65,
+            "speed": 45
+        },
+        "base_experience": 223,
+        "types": [
+            "rock",
+            "ground"
+        ]
+    },
+    {
+        "name": "ponyta",
+        "base_statistics": {
+            "health_points": 50,
+            "attack": 85,
+            "defense": 55,
+            "special_attack": 65,
+            "special_defense": 65,
+            "speed": 90
+        },
+        "base_experience": 82,
+        "types": [
+            "fire"
+        ]
+    },
+    {
+        "name": "rapidash",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 100,
+            "defense": 70,
+            "special_attack": 80,
+            "special_defense": 80,
+            "speed": 105
+        },
+        "base_experience": 175,
+        "types": [
+            "fire"
+        ]
+    },
+    {
+        "name": "slowpoke",
+        "base_statistics": {
+            "health_points": 90,
+            "attack": 65,
+            "defense": 65,
+            "special_attack": 40,
+            "special_defense": 40,
+            "speed": 15
+        },
+        "base_experience": 63,
+        "types": [
+            "water",
+            "psychic"
+        ]
+    },
+    {
+        "name": "slowbro",
+        "base_statistics": {
+            "health_points": 95,
+            "attack": 75,
+            "defense": 110,
+            "special_attack": 100,
+            "special_defense": 80,
+            "speed": 30
+        },
+        "base_experience": 172,
+        "types": [
+            "water",
+            "psychic"
+        ]
+    },
+    {
+        "name": "magnemite",
+        "base_statistics": {
+            "health_points": 25,
+            "attack": 35,
+            "defense": 70,
+            "special_attack": 95,
+            "special_defense": 55,
+            "speed": 45
+        },
+        "base_experience": 65,
+        "types": [
+            "electric",
+            "steel"
+        ]
+    },
+    {
+        "name": "magneton",
+        "base_statistics": {
+            "health_points": 50,
+            "attack": 60,
+            "defense": 95,
+            "special_attack": 120,
+            "special_defense": 70,
+            "speed": 70
+        },
+        "base_experience": 163,
+        "types": [
+            "electric",
+            "steel"
+        ]
+    },
+    {
+        "name": "farfetchd",
+        "base_statistics": {
+            "health_points": 52,
+            "attack": 90,
+            "defense": 55,
+            "special_attack": 58,
+            "special_defense": 62,
+            "speed": 60
+        },
+        "base_experience": 132,
+        "types": [
+            "normal",
+            "flying"
+        ]
+    },
+    {
+        "name": "doduo",
+        "base_statistics": {
+            "health_points": 35,
+            "attack": 85,
+            "defense": 45,
+            "special_attack": 35,
+            "special_defense": 35,
+            "speed": 75
+        },
+        "base_experience": 62,
+        "types": [
+            "normal",
+            "flying"
+        ]
+    },
+    {
+        "name": "dodrio",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 110,
+            "defense": 70,
+            "special_attack": 60,
+            "special_defense": 60,
+            "speed": 110
+        },
+        "base_experience": 165,
+        "types": [
+            "normal",
+            "flying"
+        ]
+    },
+    {
+        "name": "seel",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 45,
+            "defense": 55,
+            "special_attack": 45,
+            "special_defense": 70,
+            "speed": 45
+        },
+        "base_experience": 65,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "dewgong",
+        "base_statistics": {
+            "health_points": 90,
+            "attack": 70,
+            "defense": 80,
+            "special_attack": 70,
+            "special_defense": 95,
+            "speed": 70
+        },
+        "base_experience": 166,
+        "types": [
+            "water",
+            "ice"
+        ]
+    },
+    {
+        "name": "grimer",
+        "base_statistics": {
+            "health_points": 80,
+            "attack": 80,
+            "defense": 50,
+            "special_attack": 40,
+            "special_defense": 50,
+            "speed": 25
+        },
+        "base_experience": 65,
+        "types": [
+            "poison"
+        ]
+    },
+    {
+        "name": "muk",
+        "base_statistics": {
+            "health_points": 105,
+            "attack": 105,
+            "defense": 75,
+            "special_attack": 65,
+            "special_defense": 100,
+            "speed": 50
+        },
+        "base_experience": 175,
+        "types": [
+            "poison"
+        ]
+    },
+    {
+        "name": "shellder",
+        "base_statistics": {
+            "health_points": 30,
+            "attack": 65,
+            "defense": 100,
+            "special_attack": 45,
+            "special_defense": 25,
+            "speed": 40
+        },
+        "base_experience": 61,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "cloyster",
+        "base_statistics": {
+            "health_points": 50,
+            "attack": 95,
+            "defense": 180,
+            "special_attack": 85,
+            "special_defense": 45,
+            "speed": 70
+        },
+        "base_experience": 184,
+        "types": [
+            "water",
+            "ice"
+        ]
+    },
+    {
+        "name": "gastly",
+        "base_statistics": {
+            "health_points": 30,
+            "attack": 35,
+            "defense": 30,
+            "special_attack": 100,
+            "special_defense": 35,
+            "speed": 80
+        },
+        "base_experience": 62,
+        "types": [
+            "ghost",
+            "poison"
+        ]
+    },
+    {
+        "name": "haunter",
+        "base_statistics": {
+            "health_points": 45,
+            "attack": 50,
+            "defense": 45,
+            "special_attack": 115,
+            "special_defense": 55,
+            "speed": 95
+        },
+        "base_experience": 142,
+        "types": [
+            "ghost",
+            "poison"
+        ]
+    },
+    {
+        "name": "gengar",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 65,
+            "defense": 60,
+            "special_attack": 130,
+            "special_defense": 75,
+            "speed": 110
+        },
+        "base_experience": 250,
+        "types": [
+            "ghost",
+            "poison"
+        ]
+    },
+    {
+        "name": "onix",
+        "base_statistics": {
+            "health_points": 35,
+            "attack": 45,
+            "defense": 160,
+            "special_attack": 30,
+            "special_defense": 45,
+            "speed": 70
+        },
+        "base_experience": 77,
+        "types": [
+            "rock",
+            "ground"
+        ]
+    },
+    {
+        "name": "drowzee",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 48,
+            "defense": 45,
+            "special_attack": 43,
+            "special_defense": 90,
+            "speed": 42
+        },
+        "base_experience": 66,
+        "types": [
+            "psychic"
+        ]
+    },
+    {
+        "name": "hypno",
+        "base_statistics": {
+            "health_points": 85,
+            "attack": 73,
+            "defense": 70,
+            "special_attack": 73,
+            "special_defense": 115,
+            "speed": 67
+        },
+        "base_experience": 169,
+        "types": [
+            "psychic"
+        ]
+    },
+    {
+        "name": "krabby",
+        "base_statistics": {
+            "health_points": 30,
+            "attack": 105,
+            "defense": 90,
+            "special_attack": 25,
+            "special_defense": 25,
+            "speed": 50
+        },
+        "base_experience": 65,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "kingler",
+        "base_statistics": {
+            "health_points": 55,
+            "attack": 130,
+            "defense": 115,
+            "special_attack": 50,
+            "special_defense": 50,
+            "speed": 75
+        },
+        "base_experience": 166,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "voltorb",
+        "base_statistics": {
+            "health_points": 40,
+            "attack": 30,
+            "defense": 50,
+            "special_attack": 55,
+            "special_defense": 55,
+            "speed": 100
+        },
+        "base_experience": 66,
+        "types": [
+            "electric"
+        ]
+    },
+    {
+        "name": "electrode",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 50,
+            "defense": 70,
+            "special_attack": 80,
+            "special_defense": 80,
+            "speed": 150
+        },
+        "base_experience": 172,
+        "types": [
+            "electric"
+        ]
+    },
+    {
+        "name": "exeggcute",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 40,
+            "defense": 80,
+            "special_attack": 60,
+            "special_defense": 45,
+            "speed": 40
+        },
+        "base_experience": 65,
+        "types": [
+            "grass",
+            "psychic"
+        ]
+    },
+    {
+        "name": "exeggutor",
+        "base_statistics": {
+            "health_points": 95,
+            "attack": 95,
+            "defense": 85,
+            "special_attack": 125,
+            "special_defense": 75,
+            "speed": 55
+        },
+        "base_experience": 186,
+        "types": [
+            "grass",
+            "psychic"
+        ]
+    },
+    {
+        "name": "cubone",
+        "base_statistics": {
+            "health_points": 50,
+            "attack": 50,
+            "defense": 95,
+            "special_attack": 40,
+            "special_defense": 50,
+            "speed": 35
+        },
+        "base_experience": 64,
+        "types": [
+            "ground"
+        ]
+    },
+    {
+        "name": "marowak",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 80,
+            "defense": 110,
+            "special_attack": 50,
+            "special_defense": 80,
+            "speed": 45
+        },
+        "base_experience": 149,
+        "types": [
+            "ground"
+        ]
+    },
+    {
+        "name": "hitmonlee",
+        "base_statistics": {
+            "health_points": 50,
+            "attack": 120,
+            "defense": 53,
+            "special_attack": 35,
+            "special_defense": 110,
+            "speed": 87
+        },
+        "base_experience": 159,
+        "types": [
+            "fighting"
+        ]
+    },
+    {
+        "name": "hitmonchan",
+        "base_statistics": {
+            "health_points": 50,
+            "attack": 105,
+            "defense": 79,
+            "special_attack": 35,
+            "special_defense": 110,
+            "speed": 76
+        },
+        "base_experience": 159,
+        "types": [
+            "fighting"
+        ]
+    },
+    {
+        "name": "lickitung",
+        "base_statistics": {
+            "health_points": 90,
+            "attack": 55,
+            "defense": 75,
+            "special_attack": 60,
+            "special_defense": 75,
+            "speed": 30
+        },
+        "base_experience": 77,
+        "types": [
+            "normal"
+        ]
+    },
+    {
+        "name": "koffing",
+        "base_statistics": {
+            "health_points": 40,
+            "attack": 65,
+            "defense": 95,
+            "special_attack": 60,
+            "special_defense": 45,
+            "speed": 35
+        },
+        "base_experience": 68,
+        "types": [
+            "poison"
+        ]
+    },
+    {
+        "name": "weezing",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 90,
+            "defense": 120,
+            "special_attack": 85,
+            "special_defense": 70,
+            "speed": 60
+        },
+        "base_experience": 172,
+        "types": [
+            "poison"
+        ]
+    },
+    {
+        "name": "rhyhorn",
+        "base_statistics": {
+            "health_points": 80,
+            "attack": 85,
+            "defense": 95,
+            "special_attack": 30,
+            "special_defense": 30,
+            "speed": 25
+        },
+        "base_experience": 69,
+        "types": [
+            "ground",
+            "rock"
+        ]
+    },
+    {
+        "name": "rhydon",
+        "base_statistics": {
+            "health_points": 105,
+            "attack": 130,
+            "defense": 120,
+            "special_attack": 45,
+            "special_defense": 45,
+            "speed": 40
+        },
+        "base_experience": 170,
+        "types": [
+            "ground",
+            "rock"
+        ]
+    },
+    {
+        "name": "chansey",
+        "base_statistics": {
+            "health_points": 250,
+            "attack": 5,
+            "defense": 5,
+            "special_attack": 35,
+            "special_defense": 105,
+            "speed": 50
+        },
+        "base_experience": 395,
+        "types": [
+            "normal"
+        ]
+    },
+    {
+        "name": "tangela",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 55,
+            "defense": 115,
+            "special_attack": 100,
+            "special_defense": 40,
+            "speed": 60
+        },
+        "base_experience": 87,
+        "types": [
+            "grass"
+        ]
+    },
+    {
+        "name": "kangaskhan",
+        "base_statistics": {
+            "health_points": 105,
+            "attack": 95,
+            "defense": 80,
+            "special_attack": 40,
+            "special_defense": 80,
+            "speed": 90
+        },
+        "base_experience": 172,
+        "types": [
+            "normal"
+        ]
+    },
+    {
+        "name": "horsea",
+        "base_statistics": {
+            "health_points": 30,
+            "attack": 40,
+            "defense": 70,
+            "special_attack": 70,
+            "special_defense": 25,
+            "speed": 60
+        },
+        "base_experience": 59,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "seadra",
+        "base_statistics": {
+            "health_points": 55,
+            "attack": 65,
+            "defense": 95,
+            "special_attack": 95,
+            "special_defense": 45,
+            "speed": 85
+        },
+        "base_experience": 154,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "goldeen",
+        "base_statistics": {
+            "health_points": 45,
+            "attack": 67,
+            "defense": 60,
+            "special_attack": 35,
+            "special_defense": 50,
+            "speed": 63
+        },
+        "base_experience": 64,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "seaking",
+        "base_statistics": {
+            "health_points": 80,
+            "attack": 92,
+            "defense": 65,
+            "special_attack": 65,
+            "special_defense": 80,
+            "speed": 68
+        },
+        "base_experience": 158,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "staryu",
+        "base_statistics": {
+            "health_points": 30,
+            "attack": 45,
+            "defense": 55,
+            "special_attack": 70,
+            "special_defense": 55,
+            "speed": 85
+        },
+        "base_experience": 68,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "starmie",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 75,
+            "defense": 85,
+            "special_attack": 100,
+            "special_defense": 85,
+            "speed": 115
+        },
+        "base_experience": 182,
+        "types": [
+            "water",
+            "psychic"
+        ]
+    },
+    {
+        "name": "mr-mime",
+        "base_statistics": {
+            "health_points": 40,
+            "attack": 45,
+            "defense": 65,
+            "special_attack": 100,
+            "special_defense": 120,
+            "speed": 90
+        },
+        "base_experience": 161,
+        "types": [
+            "psychic",
+            "fairy"
+        ]
+    },
+    {
+        "name": "scyther",
+        "base_statistics": {
+            "health_points": 70,
+            "attack": 110,
+            "defense": 80,
+            "special_attack": 55,
+            "special_defense": 80,
+            "speed": 105
+        },
+        "base_experience": 100,
+        "types": [
+            "bug",
+            "flying"
+        ]
+    },
+    {
+        "name": "jynx",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 50,
+            "defense": 35,
+            "special_attack": 115,
+            "special_defense": 95,
+            "speed": 95
+        },
+        "base_experience": 159,
+        "types": [
+            "ice",
+            "psychic"
+        ]
+    },
+    {
+        "name": "electabuzz",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 83,
+            "defense": 57,
+            "special_attack": 95,
+            "special_defense": 85,
+            "speed": 105
+        },
+        "base_experience": 172,
+        "types": [
+            "electric"
+        ]
+    },
+    {
+        "name": "magmar",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 95,
+            "defense": 57,
+            "special_attack": 100,
+            "special_defense": 85,
+            "speed": 93
+        },
+        "base_experience": 173,
+        "types": [
+            "fire"
+        ]
+    },
+    {
+        "name": "pinsir",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 125,
+            "defense": 100,
+            "special_attack": 55,
+            "special_defense": 70,
+            "speed": 85
+        },
+        "base_experience": 175,
+        "types": [
+            "bug"
+        ]
+    },
+    {
+        "name": "tauros",
+        "base_statistics": {
+            "health_points": 75,
+            "attack": 100,
+            "defense": 95,
+            "special_attack": 40,
+            "special_defense": 70,
+            "speed": 110
+        },
+        "base_experience": 172,
+        "types": [
+            "normal"
+        ]
+    },
+    {
+        "name": "magikarp",
+        "base_statistics": {
+            "health_points": 20,
+            "attack": 10,
+            "defense": 55,
+            "special_attack": 15,
+            "special_defense": 20,
+            "speed": 80
+        },
+        "base_experience": 40,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "gyarados",
+        "base_statistics": {
+            "health_points": 95,
+            "attack": 125,
+            "defense": 79,
+            "special_attack": 60,
+            "special_defense": 100,
+            "speed": 81
+        },
+        "base_experience": 189,
+        "types": [
+            "water",
+            "flying"
+        ]
+    },
+    {
+        "name": "lapras",
+        "base_statistics": {
+            "health_points": 130,
+            "attack": 85,
+            "defense": 80,
+            "special_attack": 85,
+            "special_defense": 95,
+            "speed": 60
+        },
+        "base_experience": 187,
+        "types": [
+            "water",
+            "ice"
+        ]
+    },
+    {
+        "name": "ditto",
+        "base_statistics": {
+            "health_points": 48,
+            "attack": 48,
+            "defense": 48,
+            "special_attack": 48,
+            "special_defense": 48,
+            "speed": 48
+        },
+        "base_experience": 101,
+        "types": [
+            "normal"
+        ]
+    },
+    {
+        "name": "eevee",
+        "base_statistics": {
+            "health_points": 55,
+            "attack": 55,
+            "defense": 50,
+            "special_attack": 45,
+            "special_defense": 65,
+            "speed": 55
+        },
+        "base_experience": 65,
+        "types": [
+            "normal"
+        ]
+    },
+    {
+        "name": "vaporeon",
+        "base_statistics": {
+            "health_points": 130,
+            "attack": 65,
+            "defense": 60,
+            "special_attack": 110,
+            "special_defense": 95,
+            "speed": 65
+        },
+        "base_experience": 184,
+        "types": [
+            "water"
+        ]
+    },
+    {
+        "name": "jolteon",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 65,
+            "defense": 60,
+            "special_attack": 110,
+            "special_defense": 95,
+            "speed": 130
+        },
+        "base_experience": 184,
+        "types": [
+            "electric"
+        ]
+    },
+    {
+        "name": "flareon",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 130,
+            "defense": 60,
+            "special_attack": 95,
+            "special_defense": 110,
+            "speed": 65
+        },
+        "base_experience": 184,
+        "types": [
+            "fire"
+        ]
+    },
+    {
+        "name": "porygon",
+        "base_statistics": {
+            "health_points": 65,
+            "attack": 60,
+            "defense": 70,
+            "special_attack": 85,
+            "special_defense": 75,
+            "speed": 40
+        },
+        "base_experience": 79,
+        "types": [
+            "normal"
+        ]
+    },
+    {
+        "name": "omanyte",
+        "base_statistics": {
+            "health_points": 35,
+            "attack": 40,
+            "defense": 100,
+            "special_attack": 90,
+            "special_defense": 55,
+            "speed": 35
+        },
+        "base_experience": 71,
+        "types": [
+            "rock",
+            "water"
+        ]
+    },
+    {
+        "name": "omastar",
+        "base_statistics": {
+            "health_points": 70,
+            "attack": 60,
+            "defense": 125,
+            "special_attack": 115,
+            "special_defense": 70,
+            "speed": 55
+        },
+        "base_experience": 173,
+        "types": [
+            "rock",
+            "water"
+        ]
+    },
+    {
+        "name": "kabuto",
+        "base_statistics": {
+            "health_points": 30,
+            "attack": 80,
+            "defense": 90,
+            "special_attack": 55,
+            "special_defense": 45,
+            "speed": 55
+        },
+        "base_experience": 71,
+        "types": [
+            "rock",
+            "water"
+        ]
+    },
+    {
+        "name": "kabutops",
+        "base_statistics": {
+            "health_points": 60,
+            "attack": 115,
+            "defense": 105,
+            "special_attack": 65,
+            "special_defense": 70,
+            "speed": 80
+        },
+        "base_experience": 173,
+        "types": [
+            "rock",
+            "water"
+        ]
+    },
+    {
+        "name": "aerodactyl",
+        "base_statistics": {
+            "health_points": 80,
+            "attack": 105,
+            "defense": 65,
+            "special_attack": 60,
+            "special_defense": 75,
+            "speed": 130
+        },
+        "base_experience": 180,
+        "types": [
+            "rock",
+            "flying"
+        ]
+    },
+    {
+        "name": "snorlax",
+        "base_statistics": {
+            "health_points": 160,
+            "attack": 110,
+            "defense": 65,
+            "special_attack": 65,
+            "special_defense": 110,
+            "speed": 30
+        },
+        "base_experience": 189,
+        "types": [
+            "normal"
+        ]
+    },
+    {
+        "name": "articuno",
+        "base_statistics": {
+            "health_points": 90,
+            "attack": 85,
+            "defense": 100,
+            "special_attack": 95,
+            "special_defense": 125,
+            "speed": 85
+        },
+        "base_experience": 290,
+        "types": [
+            "ice",
+            "flying"
+        ]
+    },
+    {
+        "name": "zapdos",
+        "base_statistics": {
+            "health_points": 90,
+            "attack": 90,
+            "defense": 85,
+            "special_attack": 125,
+            "special_defense": 90,
+            "speed": 100
+        },
+        "base_experience": 290,
+        "types": [
+            "electric",
+            "flying"
+        ]
+    },
+    {
+        "name": "moltres",
+        "base_statistics": {
+            "health_points": 90,
+            "attack": 100,
+            "defense": 90,
+            "special_attack": 125,
+            "special_defense": 85,
+            "speed": 90
+        },
+        "base_experience": 290,
+        "types": [
+            "fire",
+            "flying"
+        ]
+    },
+    {
+        "name": "dratini",
+        "base_statistics": {
+            "health_points": 41,
+            "attack": 64,
+            "defense": 45,
+            "special_attack": 50,
+            "special_defense": 50,
+            "speed": 50
+        },
+        "base_experience": 60,
+        "types": [
+            "dragon"
+        ]
+    },
+    {
+        "name": "dragonair",
+        "base_statistics": {
+            "health_points": 61,
+            "attack": 84,
+            "defense": 65,
+            "special_attack": 70,
+            "special_defense": 70,
+            "speed": 70
+        },
+        "base_experience": 147,
+        "types": [
+            "dragon"
+        ]
+    },
+    {
+        "name": "dragonite",
+        "base_statistics": {
+            "health_points": 91,
+            "attack": 134,
+            "defense": 95,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 80
+        },
+        "base_experience": 300,
+        "types": [
+            "dragon",
+            "flying"
+        ]
+    },
+    {
+        "name": "mewtwo",
+        "base_statistics": {
+            "health_points": 106,
+            "attack": 110,
+            "defense": 90,
+            "special_attack": 154,
+            "special_defense": 90,
+            "speed": 130
+        },
+        "base_experience": 340,
+        "types": [
+            "psychic"
+        ]
+    },
+    {
+        "name": "mew",
+        "base_statistics": {
+            "health_points": 100,
+            "attack": 100,
+            "defense": 100,
+            "special_attack": 100,
+            "special_defense": 100,
+            "speed": 100
+        },
+        "base_experience": 300,
+        "types": [
+            "psychic"
+        ]
     }
 ]

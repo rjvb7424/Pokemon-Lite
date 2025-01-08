@@ -3,7 +3,7 @@ import json
 import time
 
 # The maximum ID of the Pokémon to fetch from the API.
-id_max = 20
+id_max = 151
 # A list to store all Pokémon data.
 # This is done to avoid writing to the file every time a Pokémon is fetched.
 pokemon_list = []
