@@ -1,11 +1,12 @@
 from pokemon_factory import PokemonFactory
 from pokemon_display import display_pokemon
+from battle import start_battle
 
 def main():
-    pokemon = PokemonFactory.create_pokemon(6)
+    player_pokemon = PokemonFactory.create_pokemon(18)
+    opponent_pokemon = PokemonFactory.create_pokemon(2)
     
-    # Display the Pokemon with default scale (8) and animation delay (100 ms)
-    display_pokemon(pokemon)
+    start_battle(player_pokemon, opponent_pokemon, player_scale=8, opponent_scale=8, frame_delay=100, window_title="Pokémon Battle")
 
 if __name__ == "__main__":
     main()
