@@ -22,6 +22,20 @@ def draw_background(screen, location, time_of_day):
     # We need to scale them up to fit the screen.
     wallpaper = pygame.transform.scale(pygame.image.load(wallpaper_sprite), (screen.get_width(), screen.get_height()))
     bases = pygame.transform.scale(pygame.image.load(bases_sprite), (screen.get_width(), screen.get_height()))
-    # Thne after scaling we can draw the background on the screen.
+    # Then after scaling we can draw the background on the screen.
     screen.blit(wallpaper, (0, 0))
     screen.blit(bases, (0, 0))
+
+def draw_player_pokemon(screen, pokemon, x, y):
+    # Load the player's pokemon sprite.
+    player_sprite = pygame.image.load(pokemon.back_sprite)
+    # Scale the sprite to fit the screen.
+    scaled_sprite = pygame.transform.scale(player_sprite, (screen.get_width(), screen.get_height()))
+    screen.blit(scaled_sprite, (x, y))
+
+def draw_opponent_pokemon(screen, pokemon, x, y):
+    # Load the opponent's pokemon sprite.
+    opponent_sprite = pygame.image.load(pokemon.front_sprite)
+    # Scale the sprite to fit the screen
+    scaled_sprite = pygame.transform.scale(opponent_sprite, (screen.get_width(), screen.get_height()))
+    screen.blit(scaled_sprite, (x, y))
