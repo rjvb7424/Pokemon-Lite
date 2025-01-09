@@ -1,7 +1,22 @@
 from battle_view import setup_battle_screen
 from pokemon_factory import PokemonFactory
+import pygame
 
-player_pokemon = PokemonFactory.create_pokemon(25)
-opponent_pokemon = PokemonFactory.create_pokemon(26)
+# Set up pygame screen to fit the user's screen. He can resize the window, and full screen.
+pygame.init()
+info = pygame.display.Info()
+screen_width, screen_height = info.current_w, info.current_h
+screen = pygame.display.set_mode((screen_width, screen_height), pygame.RESIZABLE)
+pygame.display.set_caption("Pokemon Remake")
 
-setup_battle_screen(player_pokemon, opponent_pokemon, "battle sprites/wallpaper/grassland_day.png", "battle sprites/bases/grass_day.png")
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+            # Update display
+
+
+    pygame.display.flip()
+pygame.quit()

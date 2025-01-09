@@ -22,17 +22,13 @@ def setup_battle_screen(player_pokemon, opponent_pokemon, wallpaper_path, bases_
     screen = pygame.display.set_mode((screen_width, screen_height), pygame.RESIZABLE)
     pygame.display.set_caption("Pokemon Battle")
 
-    # Load images
+    # Load static images for background
     wallpaper = pygame.image.load(wallpaper_path)
     bases = pygame.image.load(bases_path)
+
+    # Load gif frames for player and opponent
     player_frames = load_gif_frames(player_pokemon.back_sprite)
     opponent_frames = load_gif_frames(opponent_pokemon.front_sprite)
-
-    # Scale images to fit the screen
-    wallpaper = pygame.transform.scale(wallpaper, (screen_width, screen_height))
-    bases = pygame.transform.scale(bases, (screen_width, screen_height))
-    player_frames = [pygame.transform.scale(frame, (int(screen_width * 0.25), int(screen_height * 0.25))) for frame in player_frames]
-    opponent_frames = [pygame.transform.scale(frame, (int(screen_width * 0.25), int(screen_height * 0.25))) for frame in opponent_frames]
 
     # Frame indices
     player_frame_index = 0
