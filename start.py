@@ -1,5 +1,6 @@
 import pygame
 
+pygame.init()
 FONT = pygame.font.Font(None, 36)
 
 def start_screen(screen):
