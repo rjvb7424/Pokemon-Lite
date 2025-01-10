@@ -5,6 +5,7 @@ from PIL import Image
 from pokemon_factory import PokemonFactory  # Your custom factory
 
 pygame.init()
+pygame.mixer.init()  # Ensure the sound mixer is initialized
 FONT = pygame.font.Font(None, 36)
 
 ###############################################################################
@@ -29,7 +30,7 @@ def load_gif(gif_path):
 #                          Drawing the Battle Scene                           #
 ###############################################################################
 def draw_background(screen, location="grassland", time_of_day="day"):
-    """Draws the appropriate background and base layer (e.g., grass) depending on location & time_of_day."""
+    """Draws the appropriate background and base layer depending on location & time_of_day."""
     if location == "grassland" and time_of_day == "day":
         wallpaper_sprite = "battle sprites/wallpaper/grassland_day.png"
         bases_sprite = "battle sprites/bases/grass_day.png"
@@ -81,20 +82,17 @@ def draw_opponent_pokemon(screen, pokemon, base_x, base_y, frame):
     screen.blit(scaled_sprite, sprite_rect)
 
 def draw_battle(screen, player_pokemon, opponent_pokemon, frame):
-    """High-level function to draw the entire battle scene."""
+    """High-level function to draw the entire battle scene (background + Pokémon)."""
     draw_background(screen, location="grassland", time_of_day="day")
     
     # Determine positions
     width, height = screen.get_width(), screen.get_height()
-
-    # Player Pokémon near bottom-left
+    
     player_x = int(width * 0.25)
-    player_y = int(height * 1.04)  # tweak as needed
-    # Opponent Pokémon near top-right
+    player_y = int(height * 1.04)   # tweak as needed
     opponent_x = int(width * 0.75)
     opponent_y = int(height * 0.65)
 
-    # Draw them
     draw_player_pokemon(screen, player_pokemon, player_x, player_y, frame)
     draw_opponent_pokemon(screen, opponent_pokemon, opponent_x, opponent_y, frame)
 
@@ -143,13 +141,11 @@ def start_screen(screen):
 
             elif event.type == pygame.KEYDOWN:
                 if active_box == 1:
-                    # Editing player_input
                     if event.key == pygame.K_BACKSPACE:
                         player_input = player_input[:-1]
                     else:
                         player_input += event.unicode
                 elif active_box == 2:
-                    # Editing opponent_input
                     if event.key == pygame.K_BACKSPACE:
                         opponent_input = opponent_input[:-1]
                     else:
@@ -199,8 +195,10 @@ def start_screen(screen):
 def battle_screen(screen, player_pokemon, opponent_pokemon):
     """
     Displays the battle scene (with animations) and includes a 'Back' button
-    for returning to the start screen. Returns True if user clicked 'Back',
-    or False if user closed the window.
+    for returning to the start screen. Also plays the player's cry first,
+    then opponent's cry after 1.5 seconds.
+    
+    Returns True if user clicked 'Back', or False if user closed the window.
     """
     clock = pygame.time.Clock()
     start_time = time.time()
@@ -208,6 +206,19 @@ def battle_screen(screen, player_pokemon, opponent_pokemon):
     # "Back" button
     back_button_rect = pygame.Rect(10, 10, 80, 40)
     back_button_color = (255, 0, 0)
+
+    # Load the cry sounds
+    try:
+        player_cry = pygame.mixer.Sound(player_pokemon.cry)
+        opponent_cry = pygame.mixer.Sound(opponent_pokemon.cry)
+    except Exception as e:
+        print("Error loading cry sound:", e)
+        player_cry, opponent_cry = None, None
+
+    # Flags for playing cries
+    player_cry_played = False
+    opponent_cry_played = False
+    time_for_opponent_cry = 0
 
     running = True
     while running:
@@ -220,6 +231,19 @@ def battle_screen(screen, player_pokemon, opponent_pokemon):
                 if back_button_rect.collidepoint(event.pos):
                     # User clicked the Back button
                     return True
+
+        # Play the player's cry once, then queue the opponent's cry
+        if not player_cry_played and player_cry:
+            player_cry.play()
+            player_cry_played = True
+            # Schedule opponent's cry in 1.5 seconds
+            time_for_opponent_cry = time.time() + 1.5
+
+        # Once 1.5 seconds have passed, play opponent's cry
+        if player_cry_played and not opponent_cry_played and opponent_cry:
+            if time.time() >= time_for_opponent_cry:
+                opponent_cry.play()
+                opponent_cry_played = True
 
         # Draw battle background + Pokémon
         draw_battle(screen, player_pokemon, opponent_pokemon, frame)
@@ -242,10 +266,10 @@ def main():
     info = pygame.display.Info()
     screen_width, screen_height = info.current_w, info.current_h
     screen = pygame.display.set_mode((screen_width, screen_height), pygame.RESIZABLE)
-    pygame.display.set_caption("Pokemon Remake with Back Button")
+    pygame.display.set_caption("Pokemon Lite")
 
     while True:
-        # 1) Show the Start Screen (blocks until user clicks Start or quits)
+        # 1) Show the Start Screen
         player_id, opponent_id = start_screen(screen)
         if player_id is None or opponent_id is None:
             # User closed the game on the start screen
@@ -270,7 +294,7 @@ def main():
             # User closed the game window on the battle screen
             pygame.quit()
             sys.exit()
-        # Otherwise, user clicked 'Back', so loop repeats -> show start screen again
+        # Otherwise, user clicked 'Back', so loop again -> show start screen
 
 if __name__ == "__main__":
     main()
