@@ -1,7 +1,7 @@
 import time
 from pokemon_factory import PokemonFactory
 import pygame
-from battle_view import draw_battle
+from battle import draw_battle
 
 pygame.init()
 info = pygame.display.Info()
@@ -15,7 +15,7 @@ def main():
     start_time = time.time()
 
     # Example Pokémon objects (replace with your factory or actual Pokémon instances)
-    player_pokemon = PokemonFactory.create_pokemon(9)
+    player_pokemon = PokemonFactory.create_pokemon(3)
     opponent_pokemon = PokemonFactory.create_pokemon(6)
 
     while running:
