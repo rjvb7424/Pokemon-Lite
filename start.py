@@ -8,7 +8,12 @@ def start_screen(screen):
         pygame.image.load("battle sprites/wallpaper/grassland_day.png"),
         (screen.get_width(), screen.get_height())
     )
-    
+    # Add a start battle button
+    button_color = (0, 255, 0)
+    button_rect = pygame.Rect(screen.get_width() // 2 - 50, screen.get_height() - 100, 100, 50)
+    pygame.draw.rect(screen, button_color, button_rect)
+    button_text = FONT.render('Start Battle', True, (0, 0, 0))
+    screen.blit(button_text, (button_rect.x + 10, button_rect.y + 10))
     input_box1 = pygame.Rect(100, 100, 140, 32)
     input_box2 = pygame.Rect(100, 150, 140, 32)
 
